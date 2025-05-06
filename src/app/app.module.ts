@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularMaterialModule } from './angular-material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ClickOutsideDirective } from './click-outside.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClickOutsideDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
